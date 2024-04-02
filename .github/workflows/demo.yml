@@ -45,6 +45,8 @@ jobs:
         with:
           name: dist-files
           path: dist
+      - name: Just Done
+        run: echo "I'm done with test !!!!!"
   deploy:
     needs: build
     runs-on: ubuntu-latest
